@@ -1,0 +1,37 @@
+$width-container-default: 130rem;
+$base-font-family-default: 'fvf-fernando', sans-serif;
+$base-font-size-default: 16rem;
+$color-base-background-default: #245552;
+$color-base-text-default: white;
+$color-scroll-default: #245552;
+$color-bg-scroll-default: #f1f1f1;
+
+body.default__layout {
+  font-size: $base-font-size-default;
+  font-family: $base-font-family-default;
+  text-rendering: optimizeLegibility;
+  background-color: $color-base-background-default;
+  color: $color-base-text-default;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-bg-scroll-default;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-scroll-default;
+    border-radius: 45rem;
+  }
+}
+
+.container {
+  width: $width-container-default;
+  @include max_devices(768) {
+    width: 100%;
+  }
+}

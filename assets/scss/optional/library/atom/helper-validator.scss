@@ -1,0 +1,25 @@
+@if $use-html-validator == true {
+  $highlight-color: red;
+	a:not([href]),
+	a[href="#"],
+	a[href=""] {
+	  background-color: $highlight-color;
+	}
+	img:not([alt]) {
+		position: relative;
+		border: 5px solid $highlight-color;
+	}
+	form:not([name]):not([id]),
+	input:not([name]),
+	select:not([name]),
+	textarea:not([name]),
+	input:not([id]),
+	select:not([id]),
+	textarea:not([id]) {
+	  border: 5px solid $highlight-color;
+	}
+	button:empty,
+	a:empty {
+		background-color: $highlight-color;
+	}
+}

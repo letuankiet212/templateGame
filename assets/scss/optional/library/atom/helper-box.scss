@@ -1,0 +1,9 @@
+@if $use-helper-box-styles == true {
+  .btn {
+    cursor: pointer;
+  }
+
+  .pe-none {
+    pointer-events: none;
+  }
+}

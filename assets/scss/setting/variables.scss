@@ -1,0 +1,44 @@
+$color-base-text: white;
+$base-color-typo: black;
+$base-font-typo: 'Montserrat';
+$secondary-color-typo: white;
+
+$text-9xl: 12.8rem;
+$text-8xl: 9.6rem;
+$text-7xl: 7.2rem;
+$text-6xl: 6rem;
+$text-5xl: 4.175rem;
+$text-4xl: 3.6rem;
+$text-3xl: 3rem;
+$text-2xl: 2.5rem;
+$text-xl: 2rem;
+$text-lg: 1.8rem;
+$text-base: 1.6rem;
+$text-sm: 1.4rem;
+$text-xs: 1.3rem;
+
+//Responsive
+$xl: 1280;
+$lg: 1024;
+$md: 768;
+$sm: 414;
+$custom: 375;
+$custom2: 1600;
+
+$limit-unit: 45;
+
+$units-map: (
+  default: (),
+  brand: (),
+  custom: (
+    8\.6: 8.6rem
+  )
+);
+
+$pm-map: (
+  default: (),
+  brand: (),
+  custom: (
+    1\.7: 1.7rem
+  )
+);

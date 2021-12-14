@@ -1,0 +1,39 @@
+@import 'app.scss';
+@import 'setting/fonts.scss';
+@import 'optional/animate/animate.scss';
+@import 'components/typo.scss';
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  min-height: 100%;
+  font-size: 10px;
+  margin: 0 auto;
+  // @include breakpoints(
+  //   "font-size",
+  //   "",
+  //   (
+  //     1920: 0.521vw,
+  //     768: 10px,
+  //   )
+  // );
+}
+
+@import 'layouts/default.scss';
+/* PLOP_LAYOUTS_IMPORT */
+
+#wrapper {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+@import './components/etc.scss', './components/footer.scss', './components/header.scss',
+  './components/popup.scss', './components/navright.scss';
+
+/* PLOP_COMPONENTS_IMPORT */
+@import 'pages/index/background';
+@import 'pages/index/index';
+
+@import './optional/library/main';

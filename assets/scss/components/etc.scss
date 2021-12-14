@@ -1,0 +1,33 @@
+$imgUnits: '../images/units/';
+.unit {
+  &-redneck {
+    background: url($imgUnits + 'redneck.png');
+    @include background-img(center center, contain);
+    @include box(7rem, 10.4rem);
+  }
+  &-background {
+    width: 9rem;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0;
+      width: 9rem;
+      height: 9rem;
+      border-radius: 1rem;
+      background-color: #0000003b;
+    }
+  }
+
+  &-level {
+    background-color: #13ca13;
+    background: url($imgUnits + 'level.png');
+    @include background-img(center center, 100% 100%);
+    @include box(2.5rem);
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+}

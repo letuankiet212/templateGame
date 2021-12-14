@@ -1,0 +1,575 @@
+@if $use-helper-flex-styles == true {
+  .flex {
+    display: flex;
+  }
+  .flex {
+    &-none {
+      flex: none;
+    }
+    &-1 {
+      flex: 1 1 0%;
+    }
+
+    &-col {
+      flex-flow: column;
+    }
+
+    &-col-reverse {
+      flex-direction: column-reverse;
+    }
+
+    &-row {
+      flex-flow: row;
+    }
+
+    &-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    &-wrap {
+      flex-wrap: wrap;
+    }
+
+    &-wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
+    &-nowrap {
+      flex-wrap: nowrap;
+    }
+  }
+  .justify {
+    &-start {
+      justify-content: flex-start;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+
+    &-center {
+      justify-content: center;
+    }
+
+    &-space-between {
+      justify-content: space-between;
+    }
+
+    &-space-around {
+      justify-content: space-around;
+    }
+
+    &-space-evenly {
+      justify-content: space-evenly;
+    }
+  }
+  .items {
+    &-center {
+      align-items: center;
+    }
+    &-start {
+      align-items: flex-start;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+  }
+  @for $i from 0 through $limit-unit {
+    .order-#{$i} {
+      order: #{$i};
+    }
+  }
+
+  @include devices($custom) {
+    .custom\:flex {
+      display: flex;
+    }
+    .custom\:flex {
+      &-none {
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .custom\:justify {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .custom\:items {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+    }
+    @for $i from 0 through $limit-unit {
+      .custom\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+  @include devices($sm) {
+    .sm\:flex {
+      display: flex;
+    }
+    .sm\:flex {
+      &-none {
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .sm\:justify {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .sm\:items {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+    }
+    @for $i from 0 through $limit-unit {
+      .sm\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+  @include devices($md) {
+    .md\:flex {
+      display: flex;
+    }
+    .md\:flex {
+      &-none {
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .md\:justify {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .md\:items {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+    }
+    @for $i from 0 through $limit-unit {
+      .md\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+  @include devices($lg) {
+    .lg\:flex {
+      display: flex;
+    }
+    .lg\:flex {
+      &-none {
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .lg\:justify {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .lg\:items {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+    }
+    @for $i from 0 through $limit-unit {
+      .lg\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:flex {
+      display: flex;
+    }
+    .xl\:flex {
+      &-none {
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .xl\:justify {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .xl\:items {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+    }
+    @for $i from 0 through $limit-unit {
+      .xl\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:flex {
+      display: flex;
+    }
+    .custom2\:flex {
+      &-none {
+        flex: none;
+      }
+      &-1 {
+        flex: 1 1 0%;
+      }
+
+      &-col {
+        flex-flow: column;
+      }
+
+      &-col-reverse {
+        flex-direction: column-reverse;
+      }
+
+      &-row {
+        flex-flow: row;
+      }
+
+      &-row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      &-wrap {
+        flex-wrap: wrap;
+      }
+
+      &-wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      &-nowrap {
+        flex-wrap: nowrap;
+      }
+    }
+    .custom2\:justify {
+      &-start {
+        justify-content: flex-start;
+      }
+
+      &-end {
+        justify-content: flex-end;
+      }
+
+      &-center {
+        justify-content: center;
+      }
+
+      &-space-between {
+        justify-content: space-between;
+      }
+
+      &-space-around {
+        justify-content: space-around;
+      }
+
+      &-space-evenly {
+        justify-content: space-evenly;
+      }
+    }
+    .custom2\:items {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+    }
+    @for $i from 0 through $limit-unit {
+      .custom2\:order-#{$i} {
+        order: #{$i};
+      }
+    }
+  }
+}

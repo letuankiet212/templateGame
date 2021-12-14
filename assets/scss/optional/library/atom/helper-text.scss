@@ -1,0 +1,710 @@
+@if $use-helper-text-styles == true {
+  .text {
+    &-left {
+      text-align: left;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-right {
+      text-align: right;
+    }
+
+    &-just {
+      text-align: justify;
+    }
+
+    &-capitalized {
+      text-transform: capitalize;
+    }
+
+    &-small {
+      font-variant-caps: small-caps;
+      font-feature-settings: 'smcp';
+    }
+
+    &-upper {
+      text-transform: uppercase;
+    }
+
+    &-r {
+      font-weight: 400;
+    }
+
+    &-bold {
+      font-weight: bold;
+    }
+
+    &-italic {
+      font-style: italic;
+    }
+
+    &-underline {
+      text-decoration: underline;
+    }
+
+    &-line-through {
+      text-decoration: line-through;
+    }
+
+    &-no-underline {
+      text-decoration: none;
+    }
+  }
+  .font {
+    &-thin {
+      font-weight: 100;
+    }
+    &-extralight {
+      font-weight: 200;
+    }
+    &-light {
+      font-weight: 300;
+    }
+    &-normal {
+      font-weight: 400;
+    }
+    &-medium {
+      font-weight: 500;
+    }
+    &-semibold {
+      font-weight: 600;
+    }
+    &-bold {
+      font-weight: 700;
+    }
+    &-extrabold {
+      font-weight: 800;
+    }
+    &-black {
+      font-weight: 900;
+    }
+  }
+  .align {
+    &-top {
+      vertical-align: top;
+    }
+
+    &-middle {
+      vertical-align: middle;
+    }
+
+    &-bottom {
+      vertical-align: bottom;
+    }
+  }
+  @include devices($custom) {
+    .custom\:text {
+      &-left {
+        text-align: left;
+      }
+
+      &-center {
+        text-align: center;
+      }
+
+      &-right {
+        text-align: right;
+      }
+
+      &-just {
+        text-align: justify;
+      }
+
+      &-capitalized {
+        text-transform: capitalize;
+      }
+
+      &-small {
+        font-variant-caps: small-caps;
+        font-feature-settings: 'smcp';
+      }
+
+      &-upper {
+        text-transform: uppercase;
+      }
+
+      &-r {
+        font-weight: 400;
+      }
+
+      &-bold {
+        font-weight: 600;
+      }
+
+      &-bold {
+        font-weight: bold;
+      }
+
+      &-italic {
+        font-style: italic;
+      }
+
+      &-underline {
+        text-decoration: underline;
+      }
+
+      &-line-through {
+        text-decoration: line-through;
+      }
+
+      &-no-underline {
+        text-decoration: none;
+      }
+    }
+    .custom\:font {
+      &-thin {
+        font-weight: 100;
+      }
+      &-extralight {
+        font-weight: 200;
+      }
+      &-light {
+        font-weight: 300;
+      }
+      &-normal {
+        font-weight: 400;
+      }
+      &-medium {
+        font-weight: 500;
+      }
+      &-semibold {
+        font-weight: 600;
+      }
+      &-bold {
+        font-weight: 700;
+      }
+      &-extrabold {
+        font-weight: 800;
+      }
+      &-black {
+        font-weight: 900;
+      }
+    }
+    .custom\:align {
+      &-top {
+        vertical-align: top;
+      }
+
+      &-middle {
+        vertical-align: middle;
+      }
+
+      &-bottom {
+        vertical-align: bottom;
+      }
+    }
+  }
+  @include devices($sm) {
+    .sm\:text {
+      &-left {
+        text-align: left;
+      }
+
+      &-center {
+        text-align: center;
+      }
+
+      &-right {
+        text-align: right;
+      }
+
+      &-just {
+        text-align: justify;
+      }
+
+      &-capitalized {
+        text-transform: capitalize;
+      }
+
+      &-small {
+        font-variant-caps: small-caps;
+        font-feature-settings: 'smcp';
+      }
+
+      &-upper {
+        text-transform: uppercase;
+      }
+
+      &-r {
+        font-weight: 400;
+      }
+
+      &-bold {
+        font-weight: 600;
+      }
+
+      &-bold {
+        font-weight: bold;
+      }
+
+      &-italic {
+        font-style: italic;
+      }
+
+      &-underline {
+        text-decoration: underline;
+      }
+
+      &-line-through {
+        text-decoration: line-through;
+      }
+
+      &-no-underline {
+        text-decoration: none;
+      }
+    }
+    .sm\:font {
+      &-thin {
+        font-weight: 100;
+      }
+      &-extralight {
+        font-weight: 200;
+      }
+      &-light {
+        font-weight: 300;
+      }
+      &-normal {
+        font-weight: 400;
+      }
+      &-medium {
+        font-weight: 500;
+      }
+      &-semibold {
+        font-weight: 600;
+      }
+      &-bold {
+        font-weight: 700;
+      }
+      &-extrabold {
+        font-weight: 800;
+      }
+      &-black {
+        font-weight: 900;
+      }
+    }
+    .sm\:align {
+      &-top {
+        vertical-align: top;
+      }
+
+      &-middle {
+        vertical-align: middle;
+      }
+
+      &-bottom {
+        vertical-align: bottom;
+      }
+    }
+  }
+  @include devices($md) {
+    .md\:text {
+      &-left {
+        text-align: left;
+      }
+
+      &-center {
+        text-align: center;
+      }
+
+      &-right {
+        text-align: right;
+      }
+
+      &-just {
+        text-align: justify;
+      }
+
+      &-capitalized {
+        text-transform: capitalize;
+      }
+
+      &-small {
+        font-variant-caps: small-caps;
+        font-feature-settings: 'smcp';
+      }
+
+      &-upper {
+        text-transform: uppercase;
+      }
+
+      &-r {
+        font-weight: 400;
+      }
+
+      &-bold {
+        font-weight: 600;
+      }
+
+      &-bold {
+        font-weight: bold;
+      }
+
+      &-italic {
+        font-style: italic;
+      }
+
+      &-underline {
+        text-decoration: underline;
+      }
+
+      &-line-through {
+        text-decoration: line-through;
+      }
+
+      &-no-underline {
+        text-decoration: none;
+      }
+    }
+    .md\:font {
+      &-thin {
+        font-weight: 100;
+      }
+      &-extralight {
+        font-weight: 200;
+      }
+      &-light {
+        font-weight: 300;
+      }
+      &-normal {
+        font-weight: 400;
+      }
+      &-medium {
+        font-weight: 500;
+      }
+      &-semibold {
+        font-weight: 600;
+      }
+      &-bold {
+        font-weight: 700;
+      }
+      &-extrabold {
+        font-weight: 800;
+      }
+      &-black {
+        font-weight: 900;
+      }
+    }
+    .md\:align {
+      &-top {
+        vertical-align: top;
+      }
+
+      &-middle {
+        vertical-align: middle;
+      }
+
+      &-bottom {
+        vertical-align: bottom;
+      }
+    }
+  }
+  @include devices($lg) {
+    .lg\:text {
+      &-left {
+        text-align: left;
+      }
+
+      &-center {
+        text-align: center;
+      }
+
+      &-right {
+        text-align: right;
+      }
+
+      &-just {
+        text-align: justify;
+      }
+
+      &-capitalized {
+        text-transform: capitalize;
+      }
+
+      &-small {
+        font-variant-caps: small-caps;
+        font-feature-settings: 'smcp';
+      }
+
+      &-upper {
+        text-transform: uppercase;
+      }
+
+      &-r {
+        font-weight: 400;
+      }
+
+      &-bold {
+        font-weight: 600;
+      }
+
+      &-bold {
+        font-weight: bold;
+      }
+
+      &-italic {
+        font-style: italic;
+      }
+
+      &-underline {
+        text-decoration: underline;
+      }
+
+      &-line-through {
+        text-decoration: line-through;
+      }
+
+      &-no-underline {
+        text-decoration: none;
+      }
+    }
+    .lg\:font {
+      &-thin {
+        font-weight: 100;
+      }
+      &-extralight {
+        font-weight: 200;
+      }
+      &-light {
+        font-weight: 300;
+      }
+      &-normal {
+        font-weight: 400;
+      }
+      &-medium {
+        font-weight: 500;
+      }
+      &-semibold {
+        font-weight: 600;
+      }
+      &-bold {
+        font-weight: 700;
+      }
+      &-extrabold {
+        font-weight: 800;
+      }
+      &-black {
+        font-weight: 900;
+      }
+    }
+    .lg\:align {
+      &-top {
+        vertical-align: top;
+      }
+
+      &-middle {
+        vertical-align: middle;
+      }
+
+      &-bottom {
+        vertical-align: bottom;
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:text {
+      &-left {
+        text-align: left;
+      }
+
+      &-center {
+        text-align: center;
+      }
+
+      &-right {
+        text-align: right;
+      }
+
+      &-just {
+        text-align: justify;
+      }
+
+      &-capitalized {
+        text-transform: capitalize;
+      }
+
+      &-small {
+        font-variant-caps: small-caps;
+        font-feature-settings: 'smcp';
+      }
+
+      &-upper {
+        text-transform: uppercase;
+      }
+
+      &-r {
+        font-weight: 400;
+      }
+
+      &-bold {
+        font-weight: 600;
+      }
+
+      &-bold {
+        font-weight: bold;
+      }
+
+      &-italic {
+        font-style: italic;
+      }
+
+      &-underline {
+        text-decoration: underline;
+      }
+
+      &-line-through {
+        text-decoration: line-through;
+      }
+
+      &-no-underline {
+        text-decoration: none;
+      }
+    }
+    .xl\:font {
+      &-thin {
+        font-weight: 100;
+      }
+      &-extralight {
+        font-weight: 200;
+      }
+      &-light {
+        font-weight: 300;
+      }
+      &-normal {
+        font-weight: 400;
+      }
+      &-medium {
+        font-weight: 500;
+      }
+      &-semibold {
+        font-weight: 600;
+      }
+      &-bold {
+        font-weight: 700;
+      }
+      &-extrabold {
+        font-weight: 800;
+      }
+      &-black {
+        font-weight: 900;
+      }
+    }
+    .xl\:align {
+      &-top {
+        vertical-align: top;
+      }
+
+      &-middle {
+        vertical-align: middle;
+      }
+
+      &-bottom {
+        vertical-align: bottom;
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:text {
+      &-left {
+        text-align: left;
+      }
+
+      &-center {
+        text-align: center;
+      }
+
+      &-right {
+        text-align: right;
+      }
+
+      &-just {
+        text-align: justify;
+      }
+
+      &-capitalized {
+        text-transform: capitalize;
+      }
+
+      &-small {
+        font-variant-caps: small-caps;
+        font-feature-settings: 'smcp';
+      }
+
+      &-upper {
+        text-transform: uppercase;
+      }
+
+      &-r {
+        font-weight: 400;
+      }
+
+      &-bold {
+        font-weight: 600;
+      }
+
+      &-bold {
+        font-weight: bold;
+      }
+
+      &-italic {
+        font-style: italic;
+      }
+
+      &-underline {
+        text-decoration: underline;
+      }
+
+      &-line-through {
+        text-decoration: line-through;
+      }
+
+      &-no-underline {
+        text-decoration: none;
+      }
+    }
+    .custom2\:font {
+      &-thin {
+        font-weight: 100;
+      }
+      &-extralight {
+        font-weight: 200;
+      }
+      &-light {
+        font-weight: 300;
+      }
+      &-normal {
+        font-weight: 400;
+      }
+      &-medium {
+        font-weight: 500;
+      }
+      &-semibold {
+        font-weight: 600;
+      }
+      &-bold {
+        font-weight: 700;
+      }
+      &-extrabold {
+        font-weight: 800;
+      }
+      &-black {
+        font-weight: 900;
+      }
+    }
+    .custom2\:align {
+      &-top {
+        vertical-align: top;
+      }
+
+      &-middle {
+        vertical-align: middle;
+      }
+
+      &-bottom {
+        vertical-align: bottom;
+      }
+    }
+  }
+}

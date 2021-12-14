@@ -1,0 +1,6 @@
+.index_page {
+  .team {
+    padding-top: 25rem;
+    @include box(98rem, 42.1rem);
+  }
+}

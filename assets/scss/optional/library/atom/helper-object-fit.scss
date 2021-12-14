@@ -1,0 +1,134 @@
+@if $use-helper-object-fit-styles == true {
+  .object {
+    &-contain {
+      object-fit: contain;
+    }
+    &-cover {
+      object-fit: cover;
+    }
+    &-fill {
+      object-fit: fill;
+    }
+    &-none {
+      object-fit: none;
+    }
+    &-scale-down {
+      object-fit: scale-down;
+    }
+  }
+
+  @include devices($custom) {
+    .custom\:object {
+      &-contain {
+        object-fit: contain;
+      }
+      &-cover {
+        object-fit: cover;
+      }
+      &-fill {
+        object-fit: fill;
+      }
+      &-none {
+        object-fit: none;
+      }
+      &-scale-down {
+        object-fit: scale-down;
+      }
+    }
+  }
+  @include devices($sm) {
+    .sm\:object {
+      &-contain {
+        object-fit: contain;
+      }
+      &-cover {
+        object-fit: cover;
+      }
+      &-fill {
+        object-fit: fill;
+      }
+      &-none {
+        object-fit: none;
+      }
+      &-scale-down {
+        object-fit: scale-down;
+      }
+    }
+  }
+  @include devices($md) {
+    .md\:object {
+      &-contain {
+        object-fit: contain;
+      }
+      &-cover {
+        object-fit: cover;
+      }
+      &-fill {
+        object-fit: fill;
+      }
+      &-none {
+        object-fit: none;
+      }
+      &-scale-down {
+        object-fit: scale-down;
+      }
+    }
+  }
+  @include devices($lg) {
+    .lg\:object {
+      &-contain {
+        object-fit: contain;
+      }
+      &-cover {
+        object-fit: cover;
+      }
+      &-fill {
+        object-fit: fill;
+      }
+      &-none {
+        object-fit: none;
+      }
+      &-scale-down {
+        object-fit: scale-down;
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:object {
+      &-contain {
+        object-fit: contain;
+      }
+      &-cover {
+        object-fit: cover;
+      }
+      &-fill {
+        object-fit: fill;
+      }
+      &-none {
+        object-fit: none;
+      }
+      &-scale-down {
+        object-fit: scale-down;
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:object {
+      &-contain {
+        object-fit: contain;
+      }
+      &-cover {
+        object-fit: cover;
+      }
+      &-fill {
+        object-fit: fill;
+      }
+      &-none {
+        object-fit: none;
+      }
+      &-scale-down {
+        object-fit: scale-down;
+      }
+    }
+  }
+}

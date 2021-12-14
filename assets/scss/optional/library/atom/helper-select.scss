@@ -1,0 +1,112 @@
+@if $use-helper-select-styles == true {
+  .select {
+    &-none {
+      user-select: none;
+    }
+    &-text {
+      user-select: text;
+    }
+    &-all {
+      user-select: all;
+    }
+    &-auto {
+      user-select: auto;
+    }
+  }
+  @include devices($custom) {
+    .custom\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include devices($sm) {
+    .sm\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include devices($md) {
+    .md\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include devices($lg) {
+    .lg\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include devices($xl) {
+    .xl\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:select {
+      &-none {
+        user-select: none;
+      }
+      &-text {
+        user-select: text;
+      }
+      &-all {
+        user-select: all;
+      }
+      &-auto {
+        user-select: auto;
+      }
+    }
+  }
+}

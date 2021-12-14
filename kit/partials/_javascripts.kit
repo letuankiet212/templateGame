@@ -1,0 +1,9 @@
+<script>
+  function copyText(elements) {
+    var copyText = document.getElementById(elements);
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  }
+
+</script>

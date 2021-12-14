@@ -1,0 +1,57 @@
+@if $use-helper-visibility-styles == true {
+  .visible {
+    visibility: visible;
+  }
+  .invisible {
+    visibility: hidden;
+  }
+
+  @include devices($custom) {
+    .custom\:visible {
+      visibility: visible;
+    }
+    .custom\:invisible {
+      visibility: hidden;
+    }
+  }
+  @include devices($sm) {
+    .sm\:visible {
+      visibility: visible;
+    }
+    .sm\:invisible {
+      visibility: hidden;
+    }
+  }
+  @include devices($md) {
+    .md\:visible {
+      visibility: visible;
+    }
+    .md\:invisible {
+      visibility: hidden;
+    }
+  }
+  @include devices($lg) {
+    .lg\:visible {
+      visibility: visible;
+    }
+    .lg\:invisible {
+      visibility: hidden;
+    }
+  }
+  @include devices($xl) {
+    .xl\:visible {
+      visibility: visible;
+    }
+    .xl\:invisible {
+      visibility: hidden;
+    }
+  }
+  @include devices($custom2) {
+    .custom2\:visible {
+      visibility: visible;
+    }
+    .custom2\:invisible {
+      visibility: hidden;
+    }
+  }
+}
