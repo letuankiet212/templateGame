@@ -1,0 +1,85 @@
+//Scroll
+var scrollAction = {
+    x: "undefined",
+    y: "undefined"
+  },
+  scrollDirection;
+
+function scrollFunc() {
+  if (typeof scrollAction.x == "undefined") {
+    scrollAction.x = window.pageXOffset;
+    scrollAction.y = window.pageYOffset;
+  }
+  var diffX = scrollAction.x - window.pageXOffset;
+  var diffY = scrollAction.y - window.pageYOffset;
+  if (diffX < 0) {
+    // Scroll right
+    scrollDirection = "right";
+  } else if (diffX > 0) {
+    // Scroll left
+    scrollDirection = "left";
+  } else if (diffY < 0) {
+    // Scroll down
+    scrollDirection = "down";
+  } else if (diffY > 0) {
+    // Scroll up
+    scrollDirection = "up";
+  } else {
+    // First scroll event
+  }
+  scrollAction.x = window.pageXOffset;
+  scrollAction.y = window.pageYOffset;
+}
+window.onscroll = function(e) {
+  scrollFunc();
+  var top = parseInt($(document).scrollTop());
+  //nav-right
+  if (top >= $(".frame1").offset().top * 0.5 && scrollDirection == "down") {
+    $(".rdh").fadeIn();
+  } else if (
+    top <= $(".frame1").offset().top * 0.5 &&
+    scrollDirection == "up"
+  ) {
+    $(".rdh").fadeOut();
+  }
+
+  if (top >= $(".frame2").offset().top - $(".frame2").height()) {
+    $(".frame2 .obj-nhanvat").addClass("animate__bounceInRight");
+    $(".frame2 .obj-box").addClass("animate__bounceInLeft");
+    $(".frame2 .info").addClass("animate__fadeInDown");
+    $(".frame2 .obj-tree").addClass("animate__bounceIn");
+  } else {
+    $(".frame2 .obj-nhanvat").removeClass("animate__bounceInRight");
+    $(".frame2 .obj-box").removeClass("animate__bounceInLeft");
+    $(".frame2 .info").removeClass("animate__fadeInDown");
+    $(".frame2 .obj-tree").removeClass("animate__bounceIn");
+  }
+
+  if (top >= $(".frame3").offset().top - $(".frame3").height()) {
+    $(".frame3 .info").addClass("animate__fadeInDown");
+    $(".frame3 .list__gift-box").addClass(" animate__fadeInUp");
+  } else {
+    $(".frame3 .info").removeClass("animate__fadeInDown");
+    $(".frame3 .list__gift-box").removeClass(" animate__fadeInUp");
+  }
+
+  if (top >= $(".frame4").offset().top - $(".frame4").height()) {
+    $(".frame4 .lotrinh__number ").addClass("animate__flipInX");
+  } else {
+    $(".frame4 .lotrinh__number ").removeClass("animate__flipInX");
+  }
+
+  if (top >= $(".frame6").offset().top - $(".frame6").height()) {
+    $(".frame6 .col1").addClass("animate__fadeInLeftBig");
+    $(".frame6 .col2").addClass("animate__fadeInRightBig");
+  } else {
+    $(".frame6 .col1").removeClass("animate__fadeInLeftBig");
+    $(".frame6 .col2").removeClass("animate__fadeInRightBig");
+  }
+
+  if (top >= $(".frame7").offset().top - $(".frame7").height()) {
+    $(".frame7 .info").addClass("animate__fadeInDown");
+  } else {
+    $(".frame7 .info").removeClass("animate__fadeInDown");
+  }
+};

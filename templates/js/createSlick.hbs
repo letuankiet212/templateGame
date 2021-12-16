@@ -1,0 +1,22 @@
+$('{{name_slick}}').not(".slick-initialized").slick({
+    infinite: true/false,
+    arrows:true/false,
+    dots: true/false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+ 
+    //Hiện slick active ở trung tâm
+    centerMode:true,
+
+    //Khoảng cách của phần hiển thị bị che một item chưa show (dung chung với centerMode)
+    centerPadding :’50px’ or ‘50%’,
+
+    //Cho phép di chuyển bằng nút
+    accessibility:true ,
+
+    //Đặt button arrow vào class cho trước
+    appendArrows: ‘.contron-pre-next’,
+
+    //Đặt dot vào class cho trước
+    appendDots: ‘.dot’,
+});

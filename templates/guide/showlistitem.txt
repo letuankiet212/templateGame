@@ -1,0 +1,25 @@
+var list_qua = [
+  { src: "/hailoc/da-cuong-hoa.png", number: "x10.000" },
+  { src: "/hailoc/beli.png", number: "x10.000.000" },
+  { src: "/hailoc/exp.png", number: "x30.000.000" },
+  { src: "/hailoc/manh-tuong1.png", number: "x50" },
+  { src: "/hailoc/manh-tuong1-1.png", number: "x50" },
+  { src: "/hailoc/manh-tuong1-2.png", number: "x50" },
+];
+var list_data = list_qua;
+
+var info__item = "";
+for (var i = 0; i < list_data.length; i++) {
+  info__item +=
+    '<div class="item "><img src="' +
+    base_url +
+    "/hailoc/" +
+    list_data[i] +
+    '"alt="" class="centered" >';
+  info__item += "</div>";
+
+  var list_qua = $("#popup-claim .ct");
+  $(list_qua).html("");
+  $(list_qua).html(info__item);
+}
+$("#popup-claim").fadeIn();

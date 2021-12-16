@@ -1,0 +1,7 @@
+@supports (display:flex) {
+  /* Code when property or value is supported*/
+}
+
+@supports not (display:flex) {
+  /* Code when property or value is not supported */
+}

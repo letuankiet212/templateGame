@@ -1,0 +1,28 @@
+<div id="popup-noti" class="modal-form">
+    <div class="bg-modal"></div>
+    <div class="modal-main">
+        <div class="popup-container clearfix t-center">
+            <span class="modal-close"></span>
+            <div class="popup-title">
+                <span>Thông báo</span>
+            </div>
+            <div class="popup-text">
+                <span>វេនបង្វិល ១០ ដងមើលលម្អិតក្នុងប្រវត្តិសាស្រ្ត</span>
+            </div>
+        </div>
+    </div>
+</div>
+<button id="btn-popup-noti">Popup thông báo</button>
+<script>
+    $("#btn-popup-noti").on("click", function () {
+        $("#popup-noti").fadeIn();
+    });
+
+    $(".modal-close").on("click", function () {
+        $(this).parents("modal-form").fadeOut();
+    });
+
+    $(".bg-modal").on("click", function () {
+       $(this).parents("modal-form").fadeOut();
+    });
+</script>

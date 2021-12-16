@@ -1,0 +1,34 @@
+function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/windows phone/i.test(userAgent)) {
+        return "window-phone";
+    }
+    if (/android/i.test(userAgent)) {
+        return "android";
+    }
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "ios";
+    }
+    return "pc";
+}
+
+function setUrlDownload(){
+    var android ='{{link_androi}}'
+    var ios ="{{link_ios}}"
+
+    var system = getMobileOperatingSystem();
+    var link_down = $('.{{name-button}}');
+    var link_value = '';
+
+    if (system === 'android') {
+        link_value = android;
+    } else if (system === 'ios') {
+        link_value = ios;
+    } else {
+        link_value = android;
+    }
+
+    link_down.attr("href",link_value);
+}
+
+setUrlDownload();

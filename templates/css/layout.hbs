@@ -1,0 +1,37 @@
+$width-container-{{import}}: 130rem;
+$base-font-family-{{import}}: 'Saira', sans-serif;
+$base-font-size-{{import}}: 16rem;
+$color-base-background-{{import}}: #245552;
+$color-base-text-{{import}}: white;
+$color-scroll-{{import}}: #245552;
+$color-bg-scroll-{{import}}: #f1f1f1;
+
+body.{{import}}__layout {
+font-size: $base-font-size-{{import}};
+font-family: $base-font-family-{{import}};
+text-rendering: optimizeLegibility;
+background-color: $color-base-background-{{import}};
+color: $color-base-text-{{import}};
+max-width: 1920px;
+margin: 0 auto;
+
+&::-webkit-scrollbar {
+width: 0.8rem;
+}
+
+&::-webkit-scrollbar-track {
+background: $color-bg-scroll-{{import}};
+}
+
+&::-webkit-scrollbar-thumb {
+background: $color-scroll-{{import}};
+border-radius: 45rem;
+}
+}
+
+.{{import}}__container {
+width: $width-container-{{import}};
+@include max_devices(768) {
+width: 100%;
+}
+}
