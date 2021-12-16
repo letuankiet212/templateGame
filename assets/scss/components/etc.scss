@@ -35,7 +35,7 @@ $imgUI: '../images/ui/';
 .ui {
   &-background {
     width: 9rem;
-    height: 8rem;
+    height: 7rem;
     font-size: 1.2rem;
     &:before {
       content: '';
@@ -76,6 +76,33 @@ $imgUI: '../images/ui/';
     @include background-img(center center, 100% 100%);
     @include box(3.8rem);
   }
+  &-fuel {
+    background: url($imgUI + 'icon-fuel.png');
+    @include background-img(center center, 100% 100%);
+    width: 3.2rem;
+    height: 4rem;
+  }
+  &-token {
+    background: url($imgUI + 'icon-token.png');
+    @include background-img(center center, 100% 100%);
+    width: 3.2rem;
+    height: 3.8rem;
+  }
+  &-box1 {
+    background: url($imgUI + 'icon-box.png');
+    @include background-img(center center, 100% 100%);
+    @include box(5.2rem, 3.9rem);
+  }
+  &-box2 {
+    background: url($imgUI + 'icon-box2.png');
+    @include background-img(center center, 100% 100%);
+    @include box(5.2rem, 3.9rem);
+  }
+  &-upbox {
+    background: url($imgUI + 'upgrade_items.png');
+    @include background-img(center center, 100% 100%);
+    @include box(3.4rem, 3.2rem);
+  }
 }
 .btn {
   &-game {
@@ -83,9 +110,28 @@ $imgUI: '../images/ui/';
     border: 0.2rem solid #000000cf;
   }
 
+  &-green {
+    background: #659c1a;
+    box-shadow: inset 0px 2rem 0.6rem #5e8f00, inset 0px -0.5rem 0px rgb(0 0 0 / 10%);
+  }
+
   &-blue {
     background: #3189b7;
-    box-shadow: inset 0px 2rem 1rem #0e77ae, inset 0px -0.5rem 0px rgb(0 0 0 / 10%);
-    font-size: 1.8rem;
+    box-shadow: inset 0px 2rem 0.6rem #0e77ae, inset 0px -0.5rem 0px rgb(0 0 0 / 10%);
+  }
+  &-red {
+    background: #e30600;
+    box-shadow: inset 0px 2rem 0.6rem #b20a27, inset 0px -0.5rem 0px #830a0e;
+  }
+
+  &-type1 {
+    background: url($imgUI + 'button.png');
+    @include background-img(center center, 100% 100%);
+    width: 10rem;
+    height: 3rem;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
   }
 }

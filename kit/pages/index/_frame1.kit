@@ -1,9 +1,26 @@
 <div class="index__content z-1 centered">
-    <div class="uiheader w-full h-5 flex justify-space-between p-0.5">
+    <div class="uiTop w-full h-5 flex justify-space-between p-0.5">
         <div class="levelUser flex items-center relative w-20">
-            <button class="icon-level text-bold text-white pb-0.5 relative z-2"> 1</button>
-            <div class="levelUser__exp overflow rounded-2xl w-1/2 h-2 bg-black centered left-8">
+            <button class="icon-level text-bold text-white  relative z-2"> 01</button>
+            <div class="levelUser__exp overflow rounded-lg w-1/2 h-2 bg-black absolute left-3">
                 <span class="absolute h-full bg-blue-400" style="width: 20%;"></span>
+            </div>
+        </div>
+        <div class="w-20">
+            <div class="token w-full relative flex items-center ml-auto">
+                <i class="icon-token block ml-auto relative z-1">
+
+                </i>
+                <div class="tokenBar overflow rounded-l-lg w-1/2 h-2 bg-black absolute right-3">
+                    <p class="centered w-full text-center text-bold leading-normal">20000</p>
+                </div>
+            </div>
+            <div class="fuel flex items-center relative w-full mt-1">
+                <i class="icon-fuel block ml-auto relative z-1"></i>
+                <div class="fuelBar overflow rounded-l-lg w-1/2 h-2 bg-black absolute right-3 bg-red-600">
+                    <p class="centered w-full text-center text-bold leading-normal">20/20</p>
+                    <span class="absolute h-full bg-black rounded-l-lg" style="width: 20%;"></span>
+                </div>
             </div>
         </div>
 
@@ -39,20 +56,149 @@
                 <p class="text-center">Units</p>
             </div>
         </div>
-        <div class="ui-background relative btn">
+        <div class="ui-background relative btn" onclick="callPopup('box')">
             <div class="centered w-full">
-                <div class="icon-shop mx-auto">
+                <div class="icon-box1 mx-auto">
 
                 </div>
-                <p class="text-center">Shop</p>
+                <p class="text-center">Box</p>
             </div>
         </div>
     </div>
-    <div class="btn-training absolute bottom-0.5 left-0.5 w-10 h-9 btn">
+    <div class="btn-training absolute bottom-0.5 left-0.5 w-10 h-8 btn" onclick="callPopup('farming')">
         <div class="btn-game btn-blue btn w-10 h-4 absolute bottom-0 left-0"></div>
         <div class="centered w-full text-center">
             <div class="icon-stages mx-auto"></div>
             <p>Location 1</p>
+        </div>
+    </div>
+    <div id="popup-box" class="popup bg-modal z-2" style="display: none;">
+        <div class="popup__bg"></div>
+        <div class="popup__main popup__type1 rounded-xl font-pixeloid_sans">
+            <button
+                class="popup__close btn-red btn-game w-3.5 h-3.5 absolute right-0 top-0 text-white text-bold text-lg font-pixel_lcd7 btn">
+                X
+            </button>
+            <div class="popup__title py-0.5">
+                <p class="text-center text-lg py-0.2">
+                    BOX
+                </p>
+            </div>
+            <div class="popup__content flex-1">
+                <div class="bg-yellow-typo h-16 border border-yellow-border flex items-center">
+                    <div class="grpbtn flex items-center justify-space-evenly h-full w-full">
+                        <div class="hover:box-shadow">
+                            <div class="box1 w-10 h-13 flex items-center flex-col btn btn-green btn-game  p-1">
+                                <p>Get 1 Hero</p>
+                                <div class="p-0.5 my-1">
+                                    <div class="icon-box1 mx-auto"></div>
+                                </div>
+                                <div class=" px-0.5">
+                                    <div class="flex justify-center items-center">
+                                        <p class="pt-0.5">200</p>
+                                        <i class="icon-token w-2 h-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hover:box-shadow">
+                            <div class="box1 w-10 h-13 flex items-center flex-col btn btn-blue btn-game  p-1">
+                                <p>Get 10 Hero</p>
+                                <div class="p-0.5 my-1">
+                                    <div class="icon-box2 mx-auto"></div>
+                                </div>
+                                <div class=" px-0.5">
+                                    <div class="flex justify-center items-center">
+                                        <p class="pt-0.5">2000</p>
+                                        <i class="icon-token w-2 h-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="popup-farming" class="popup bg-modal z-2" style="display: block;">
+        <div class="popup__bg"></div>
+        <div class="popup__main popup__type2 rounded-xl font-pixeloid_sans">
+            <button
+                class="popup__close btn-red btn-game w-3.5 h-3.5 absolute right-0 top-0 text-white text-bold text-lg font-pixel_lcd7 btn">
+                X
+            </button>
+            <div class="popup__title py-0.5">
+                <p class="text-center text-lg py-0.2">
+                    Farming
+                </p>
+            </div>
+            <div class="popup__content flex-1">
+                <div class="bg-yellow-typo h-16 border border-yellow-border flex items-center">
+                    <div class="grpbtn flex items-center justify-space-evenly h-full w-full">
+                        <div class="hover:box-shadow">
+                            <div class="box1 w-10 h-13 flex items-center flex-col btn btn-green btn-game  p-1">
+                                <p>Location 1</p>
+                                <div class="p-0.5 my-1 h-5 w-full relative">
+                                </div>
+                                <div class=" px-0.5">
+                                    <div class="flex justify-center items-center">
+                                        <p class="pt-0.5">1 ~ 15</p>
+                                        <i class="icon-token w-2 h-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hover:box-shadow">
+                            <div class="box1 w-10 h-13 flex items-center flex-col btn btn-blue btn-game  p-1">
+                                <p>Location 2</p>
+                                <div class="p-0.5 my-1 h-5 w-full relative">
+                                    <div class="centered w-full text-center py-0.5"
+                                        style="background-color: #00000026;">
+                                        <p class="pb-0.5">
+                                            *Bonus :
+                                        </p>
+                                        <div class=" icon-upbox mx-auto"></div>
+                                    </div>
+                                </div>
+                                <div class=" px-0.5">
+                                    <div class="flex justify-center items-center">
+                                        <p class="pt-0.5"> 5 ~ 20</p>
+                                        <i class="icon-token w-2 h-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grp-btn flex justify-center items-center mt-1">
+                    <div class="flex-1">
+                        <div class="btn-blue btn-game btn relative w-12 h-3 mx-auto">
+                            <div class="centered w-full text-center flex items-center justify-center">
+                                <p>Fight x1 (</p>
+                                <p> free </p>
+                                <i class="icon-token w-1.5 h-1.5"></i>
+                                <p>)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="btn-blue btn-game btn relative w-12 h-3 mx-auto">
+                            <div class="centered w-full text-center flex items-center justify-center">
+                                <p>Fight x5 (</p>
+                                <p> -2 </p>
+                                <i class="icon-token w-1.5 h-1.5"></i>
+                                <p>)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

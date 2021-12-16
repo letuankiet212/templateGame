@@ -1,7 +1,5 @@
-$fonts:/* FONT_FACE */
-'fvf-fernando',
-'tahoma', 'umtgodswordr', 'tahoma', 'uvnlaclongquanr', 'uvnlaclongquanb',
-  'umtgodswordb';
+$fonts:/* FONT_FACE */ 'pixeloid_sans', 'pixel_lcd7', 'minecraftia', 'fvf-fernando', 'tahoma',
+  'umtgodswordr', 'tahoma', 'uvnlaclongquanr', 'uvnlaclongquanb', 'umtgodswordb';
 
 @each $font in $fonts {
   @if ($font != '') {

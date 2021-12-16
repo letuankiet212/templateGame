@@ -6,4 +6,18 @@
     document.execCommand("copy");
   }
 
+  const callPopupNote = (textMsg) => {
+    const classShowText = $('.message-text-note')
+    classShowText.innerHTML = textMsg
+    $('.popup-note').fadeIn()
+  }
+
+  const callPopup = (namePopup) => {
+    $('#popup-' + namePopup).fadeIn()
+  }
+
+  $('body').on('click', '.popup__bg , .popup__close', function () {
+    $(this).parents('.popup').fadeOut()
+  })
+
 </script>
