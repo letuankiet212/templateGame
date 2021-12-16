@@ -2710,7 +2710,7 @@ html {
 }
 
 body.default__layout {
-  font-size: 16rem;
+  font-size: 1.2rem;
   font-family: "fvf-fernando", sans-serif;
   text-rendering: optimizeLegibility;
   background-color: #245552;
@@ -2764,8 +2764,8 @@ body.default__layout::-webkit-scrollbar-thumb {
   left: 50%;
   transform: translate(-50%);
   bottom: 0;
-  width: 9rem;
-  height: 9rem;
+  width: 8rem;
+  height: 2rem;
   border-radius: 1rem;
   background-color: #0000003b;
 }
@@ -2781,6 +2781,70 @@ body.default__layout::-webkit-scrollbar-thumb {
   color: white;
   font-weight: bold;
   padding-bottom: 1rem;
+}
+
+.ui-background {
+  width: 9rem;
+  height: 8rem;
+  font-size: 1.2rem;
+}
+.ui-background:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  width: 9rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  background-color: #0000003b;
+  border: solid 0.1rem #ffffff38;
+}
+.ui-background:hover {
+  filter: brightness(1.1);
+}
+
+.icon-shop {
+  background: url("../images/ui/icon-shop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 5rem;
+  height: 4.5rem;
+}
+.icon-units {
+  background: url("../images/ui/icon-units.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 4.3rem;
+  height: 4rem;
+}
+.icon-stages {
+  background: url("../images/ui/icon-stages.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 5.2rem;
+  height: 5.4rem;
+}
+.icon-level {
+  background: url("../images/ui/icon-level.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+
+.btn-game {
+  text-shadow: 0.2rem 0.2rem 0px rgba(0, 0, 0, 0.3);
+  border: 0.2rem solid #000000cf;
+}
+.btn-blue {
+  background: #3189b7;
+  box-shadow: inset 0px 2rem 1rem #0e77ae, inset 0px -0.5rem 0px rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
 }
 
 /* PLOP_COMPONENTS_IMPORT */
@@ -2801,11 +2865,33 @@ body.default__layout::-webkit-scrollbar-thumb {
   height: 108rem;
   position: relative;
 }
+.background-frame1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff2b;
+}
 
-.index_page .team {
-  padding-top: 25rem;
-  width: 98rem;
-  height: 42.1rem;
+.index__content {
+  background: url(../images/background/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  width: 81.2rem;
+  height: 37.5rem;
+  margin: 0 auto;
+  border: 0.2rem solid white;
+}
+.index__content .team {
+  padding-bottom: 5rem;
+  width: 35rem;
+  height: 27rem;
+}
+.index__content .btn-training:hover {
+  filter: brightness(1.1);
 }
 
 .text-transparent {

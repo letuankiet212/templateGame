@@ -1,4 +1,5 @@
 $imgUnits: '../images/units/';
+$imgUI: '../images/ui/';
 .unit {
   &-redneck {
     background: url($imgUnits + 'redneck.png');
@@ -13,8 +14,8 @@ $imgUnits: '../images/units/';
       left: 50%;
       transform: translate(-50%);
       bottom: 0;
-      width: 9rem;
-      height: 9rem;
+      width: 8rem;
+      height: 2rem;
       border-radius: 1rem;
       background-color: #0000003b;
     }
@@ -29,5 +30,62 @@ $imgUnits: '../images/units/';
     color: white;
     font-weight: bold;
     padding-bottom: 1rem;
+  }
+}
+.ui {
+  &-background {
+    width: 9rem;
+    height: 8rem;
+    font-size: 1.2rem;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 0;
+      width: 9rem;
+      height: 4rem;
+      border-radius: 0.6rem;
+      background-color: #0000003b;
+      border: solid 0.1rem #ffffff38;
+    }
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+}
+.icon {
+  &-shop {
+    background: url($imgUI + 'icon-shop.png');
+    @include background-img(center center, 100% 100%);
+    @include box(5rem, 4.5rem);
+  }
+  &-units {
+    background: url($imgUI + 'icon-units.png');
+    @include background-img(center center, 100% 100%);
+    @include box(4.3rem, 4rem);
+  }
+  &-stages {
+    background: url($imgUI + 'icon-stages.png');
+    @include background-img(center center, 100% 100%);
+    @include box(5.2rem, 5.4rem);
+  }
+  &-level {
+    background: url($imgUI + 'icon-level.png');
+    @include background-img(center center, 100% 100%);
+    @include box(3.8rem);
+  }
+}
+.btn {
+  &-game {
+    text-shadow: 0.2rem 0.2rem 0px rgb(0 0 0 / 30%);
+    border: 0.2rem solid #000000cf;
+  }
+
+  &-blue {
+    background: #3189b7;
+    box-shadow: inset 0px 2rem 1rem #0e77ae, inset 0px -0.5rem 0px rgb(0 0 0 / 10%);
+    font-size: 1.8rem;
   }
 }
